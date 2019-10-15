@@ -1,0 +1,83 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 20px;
+  background: black;
+  color: papayawhip;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+}
+h2 {
+  margin-top: 0;
+}
+
+button {
+  width: 8em;
+  font-size: inherit;
+  font-family: inherit;
+  background: inherit;
+  color: inherit;
+  border: 2px solid papayawhip;
+  padding: 1rem;
+}
+
+input[type="text"],
+input[type="number"] {
+  background: inherit;
+  color: inherit;
+  font-family: inherit;
+  border: 2px solid papayawhip;
+  padding: 0.4em;
+  max-width: 5em;
+}
+
+a:link,
+a:visited {
+  color: papayawhip;
+}
+
+.layout {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 540px) {
+  .layout {
+    flex-wrap: nowrap;
+  }
+}
+
+.layout > *:first-child {
+  padding: 1em;
+}
+
+.layout > *:last-child {
+  padding: 1em;
+  flex-grow: 1;
+}
+
+#content {
+  height: 100%;
+  border-left: 1px dotted #333;
+}
+
+label {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.form-group {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
