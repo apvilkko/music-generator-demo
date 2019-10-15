@@ -2,5 +2,11 @@
   "name": "music-generator-demo",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
