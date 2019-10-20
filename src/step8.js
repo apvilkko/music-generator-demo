@@ -10,14 +10,15 @@ import { tempoToMs, noteToFreq } from "./math.js";
 const template = `
 <h2>Step 8: Mixing multiple sounds</h2>
 <ul>
-<li>Create a "channel" for each sound</li>
-<li>Synth: Oscillator → Lowpass filter w/envelope → Amp w/envelope</li>
-<li>Synth 1 → Channel 1 gain → Master gain</li>
-<li>Synth 2 → Channel 2 gain → Master gain</li>
+<li>Encapsulate the osc + filter + amp into a "synth"</li>
+<li>Create a channel for each sound</li>
 </ul>
 <div class="form-group">
   <label for="tempo">Tempo (BPM)</label>
   <input id="tempo" type="number" min="10" max="300" value="130" />
+</div>
+<div id="diagram">
+  <img src="diagrams/step8.svg">
 </div>
 `;
 

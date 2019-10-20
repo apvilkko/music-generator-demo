@@ -13,14 +13,18 @@ const template = `
 <ul>
 <li>Use AudioContext timing to schedule events</li>
 <li>Randomize and store repeatable patterns</li>
-<li>Synth 1 → Feedback delay → Channel 1 gain → Master gain</li>
-<li>Synth 2 → Channel 2 gain → Master gain</li>
 </ul>
 <div class="form-group">
   <label for="tempo">Tempo (BPM)</label>
   <input id="tempo" type="number" min="10" max="300" value="115" />
 </div>
 <button id="randomize" type="button">Randomize</button>
+<div id="diagram">
+  <img src="diagrams/step10.svg">
+</div>
+<div id="diagram">
+  <img src="diagrams/step9.svg">
+</div>
 `;
 
 let tempo = 115;

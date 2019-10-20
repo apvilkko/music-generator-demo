@@ -11,11 +11,13 @@ const template = `
 <h2>Step 6: Tuning</h2>
 <ul>
 <li>Use equal temperament tuning instead of random frequencies</li>
-<li>Oscillator → Lowpass filter w/envelope → Amp w/envelope → Master gain</li>
 </ul>
 <div class="form-group">
   <label for="tempo">Tempo (BPM)</label>
   <input id="tempo" type="number" min="10" max="300" value="120" />
+</div>
+<div id="diagram">
+  <img src="diagrams/step4.svg">
 </div>
 `;
 

@@ -11,11 +11,13 @@ const template = `
 <h2>Step 7: Tonality with a scale</h2>
 <ul>
 <li>Instead of random 12 tones, use a scale</li>
-<li>Oscillator → Lowpass filter w/envelope → Amp w/envelope → Master gain</li>
 </ul>
 <div class="form-group">
   <label for="tempo">Tempo (BPM)</label>
   <input id="tempo" type="number" min="10" max="300" value="130" />
+</div>
+<div id="diagram">
+  <img src="diagrams/step4.svg">
 </div>
 `;
 

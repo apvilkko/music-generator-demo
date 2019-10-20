@@ -9,7 +9,10 @@ import envelope from "./envelope.js";
 const template = `
 <h2>Step 3: Amplitude envelope</h2>
 <ul>
-<li>Oscillator → Lowpass filter → Amp w/envelope → Master gain</li>
+<li>Shape the amplitude with an envelope</li>
+<div id="diagram">
+  <img src="diagrams/step3.svg">
+</div>
 </ul>
 `;
 

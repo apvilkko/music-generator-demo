@@ -81,3 +81,7 @@ label {
   display: flex;
   flex-direction: column;
 }
+
+#diagram {
+  padding: 2rem;
+}

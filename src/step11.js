@@ -24,6 +24,9 @@ const template = `
   <input id="tempo" type="number" min="10" max="300" value="115" />
 </div>
 <button id="randomize" type="button">Randomize</button>
+<div id="diagram">
+  <img src="diagrams/step11.svg">
+</div>
 `;
 
 let tempo = 115;

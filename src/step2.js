@@ -7,8 +7,11 @@ import setupListeners from "./setupListeners.js";
 const template = `
 <h2>Step 2: Filter</h2>
 <ul>
-<li>Oscillator → Lowpass filter → Master gain</li>
+<li>Filter out high frequencies with a low-pass filter</li>
 </ul>
+<div id="diagram">
+  <img src="diagrams/step2.svg">
+</div>
 `;
 
 let timer;

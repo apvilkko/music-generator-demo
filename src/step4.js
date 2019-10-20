@@ -9,8 +9,11 @@ import envelope from "./envelope.js";
 const template = `
 <h2>Step 4: Filter envelope</h2>
 <ul>
-<li>Oscillator → Lowpass filter w/envelope → Amp w/envelope → Master gain</li>
+<li>Shape the filter cutoff with an envelope</li>
 </ul>
+<div id="diagram">
+  <img src="diagrams/step4.svg">
+</div>
 `;
 
 let triggerAmpEnv;

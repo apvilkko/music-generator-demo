@@ -11,13 +11,14 @@ import { tempoToMs, noteToFreq } from "./math.js";
 const template = `
 <h2>Step 9: Add effects</h2>
 <ul>
-<li>Add a delay to the "lead" synth</li>
-<li>Synth 1 → Feedback delay → Channel 1 gain → Master gain</li>
-<li>Synth 2 → Channel 2 gain → Master gain</li>
+<li>Add a feedback delay effect to the "lead" synth</li>
 </ul>
 <div class="form-group">
   <label for="tempo">Tempo (BPM)</label>
   <input id="tempo" type="number" min="10" max="300" value="130" />
+</div>
+<div id="diagram">
+  <img src="diagrams/step9.svg">
 </div>
 `;
 

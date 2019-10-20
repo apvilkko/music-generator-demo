@@ -9,8 +9,10 @@ const template = `
 <li>One sawtooth oscillator</li>
 <li>random frequencies</li>
 <li>random timing</li>
-<li>Oscillator → Master gain</li>
 </ul>
+<div id="diagram">
+  <img src="diagrams/step1.svg">
+</div>
 `;
 
 let timer;
