@@ -12,14 +12,17 @@
     <title>music-generator-demo</title>
 
     <div class="layout">
-      <div>
-        <h1>Music generator demo</h1>
-        <button id="play">Play</button><br />
-        <div class="form-group">
-          <label for="volume">Volume</label>
-          <input id="volume" type="range" min="0" max="100" value="50" />
+      <div id="toggle">
+        <div class="demo-stuff">
+          <h1 class="side">Music generator demo</h1>
+          <button id="play">Play</button><br />
+          <div class="form-group">
+            <label for="volume">Volume</label>
+            <input id="volume" type="range" min="0" max="100" value="50" />
+          </div>
         </div>
-        <ul id="menu"></ul>
+        <ul id="tabs"></ul>
+        <div id="menu-container"></div>
       </div>
       <div id="content"></div>
     </div>

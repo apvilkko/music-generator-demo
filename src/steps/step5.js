@@ -1,11 +1,11 @@
-import createAudioEngine from "./createAudioEngine.js";
-import setupListeners from "./setupListeners.js";
-import rand from "./rand.js";
-import oscillator from "./oscillator.js";
-import filter from "./filter.js";
-import gain from "./gain.js";
-import envelope from "./envelope.js";
-import { tempoToMs } from "./math.js";
+import createAudioEngine from "../createAudioEngine.js";
+import rand from "../rand.js";
+import setupListeners from "../setupListeners.js";
+import oscillator from "../oscillator.js";
+import filter from "../filter.js";
+import gain from "../gain.js";
+import envelope from "../envelope.js";
+import { tempoToMs } from "../math.js";
 
 const template = `
 <h2>Step 5: Tempo</h2>

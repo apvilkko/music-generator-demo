@@ -1,17 +1,16 @@
-import createAudioEngine from "./createAudioEngine.js";
-import oscillator from "./oscillator.js";
-import rand from "./rand.js";
-import setupListeners from "./setupListeners.js";
+import createAudioEngine from "../createAudioEngine.js";
+import oscillator from "../oscillator.js";
+import filter from "../filter.js";
+import rand from "../rand.js";
+import setupListeners from "../setupListeners.js";
 
 const template = `
-<h2>Step 1: Random Mess</h2>
+<h2>Step 2: Filter</h2>
 <ul>
-<li>One sawtooth oscillator</li>
-<li>random frequencies</li>
-<li>random timing</li>
+<li>Filter out high frequencies with a low-pass filter</li>
 </ul>
 <div id="diagram">
-  <img src="diagrams/step1.svg">
+  <img src="diagrams/step2.svg">
 </div>
 `;
 
@@ -22,7 +21,8 @@ const createAudioStuff = state => {
   state.ctx = ctx;
   state.masterGain = gain;
 
-  state.osc = oscillator(state.ctx, state.masterGain);
+  state.filter = filter(state.ctx, state.masterGain);
+  state.osc = oscillator(state.ctx, state.filter);
 };
 
 const tick = state => {

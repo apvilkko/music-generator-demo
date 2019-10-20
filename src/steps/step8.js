@@ -1,11 +1,11 @@
-import createAudioEngine from "./createAudioEngine.js";
-import setupListeners from "./setupListeners.js";
-import rand, { sample } from "./rand.js";
-import oscillator from "./oscillator.js";
-import filter from "./filter.js";
-import gain from "./gain.js";
-import envelope from "./envelope.js";
-import { tempoToMs, noteToFreq } from "./math.js";
+import createAudioEngine from "../createAudioEngine.js";
+import rand, { sample } from "../rand.js";
+import setupListeners from "../setupListeners.js";
+import oscillator from "../oscillator.js";
+import filter from "../filter.js";
+import gain from "../gain.js";
+import envelope from "../envelope.js";
+import { tempoToMs, noteToFreq } from "../math.js";
 
 const template = `
 <h2>Step 8: Mixing multiple sounds</h2>

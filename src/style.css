@@ -12,10 +12,31 @@ body {
 h1 {
   margin-top: 0;
   margin-bottom: 1em;
+  font-size: 2.2rem;
+}
+h1.side {
   font-size: 1.2rem;
+}
+.h2 {
+  display: block;
+  font-size: 1.8rem;
 }
 h2 {
   margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.lead {
+  font-size: 110%;
+}
+
+#toggle.minimal {
+  opacity: 0.5;
+  font-size: 80%;
+}
+
+#toggle.minimal .demo-stuff {
+  display: none;
 }
 
 button {
@@ -70,6 +91,10 @@ a:visited {
   border-left: 1px dotted #333;
 }
 
+#content li {
+  margin-bottom: 0.4em;
+}
+
 label {
   font-size: inherit;
   font-family: inherit;
@@ -84,4 +109,8 @@ label {
 
 #diagram {
   padding: 2rem;
+}
+
+#tabs {
+  padding-left: 1rem;
 }

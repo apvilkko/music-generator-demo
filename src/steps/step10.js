@@ -1,12 +1,12 @@
-import createAudioEngine from "./createAudioEngine.js";
-import setupListeners from "./setupListeners.js";
-import rand, { sample } from "./rand.js";
-import oscillator from "./oscillator.js";
-import filter from "./filter.js";
-import gain from "./gain.js";
-import delay from "./delay.js";
-import envelope from "./envelope.js";
-import { noteToFreq } from "./math.js";
+import createAudioEngine from "../createAudioEngine.js";
+import rand, { sample } from "../rand.js";
+import setupListeners from "../setupListeners.js";
+import oscillator from "../oscillator.js";
+import filter from "../filter.js";
+import gain from "../gain.js";
+import envelope from "../envelope.js";
+import delay from "../delay.js";
+import { noteToFreq } from "../math.js";
 
 const template = `
 <h2>Step 10: Accurate timing and a sequencer</h2>
