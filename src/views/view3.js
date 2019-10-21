@@ -3,6 +3,8 @@ const template = `
 <ul>
 <li>Definitions: what is a music generator?</li>
 <li>Demo: a music generator from scratch</li>
+<li>Tour: different music generators</li>
+<li>Challenges: what is easy and what is not</li>
 <li>Future: What's next?</li>
 </ul>
 `;

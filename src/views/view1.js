@@ -6,6 +6,8 @@ const template = `
 <p>2019-10-24 @ Web Dev & Sausages</p>
 `;
 
+// TODO add contact details
+
 const entry = () => {};
 const exit = () => {};
 

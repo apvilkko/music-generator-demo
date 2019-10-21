@@ -27,6 +27,8 @@ const setMenuVisible = name => {
     name.indexOf("view") > -1 ? "minimal" : "";
 };
 
+let lastChanged;
+
 const setView = (name, state) => {
   if (name.endsWith("s")) {
     setMenuVisible(name);
@@ -34,11 +36,18 @@ const setView = (name, state) => {
     const prefix = name.indexOf("step") > -1 ? "steps/" : "views/";
     const hasPrefix = name.indexOf("/") > 0;
     const path = `/${hasPrefix ? "" : prefix}${name}`;
+    const parts = path.split("/");
+    const viewChild = parts[parts.length - 1];
     import(`.${path}.js`).then(({ template, entry, exit }) => {
       if (exitFn) {
         exitFn();
       }
       history.pushState(null, null, `#${path}`);
+      if (lastChanged) {
+        document.getElementById(`menuitem-${lastChanged}`).className = "";
+      }
+      document.getElementById(`menuitem-${viewChild}`).className = "active";
+      lastChanged = viewChild;
       render(template);
       entry(state);
       exitFn = exit;
@@ -50,6 +59,7 @@ const createMenuElement = (state, root) => page => {
   const li = document.createElement("li");
   const a = document.createElement("a");
   a.innerHTML = page;
+  a.id = `menuitem-${page}`;
   a.href = "#";
   a.addEventListener("click", evt => {
     evt.preventDefault();

@@ -114,3 +114,8 @@ label {
 #tabs {
   padding-left: 1rem;
 }
+
+.active {
+  font-weight: 700;
+  text-decoration: none;
+}
