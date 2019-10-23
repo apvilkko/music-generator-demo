@@ -87,6 +87,24 @@ const setupUi = state => {
   setupListeners(state);
   setupMenu(state);
 
+  document.addEventListener("keydown", evt => {
+    const key = evt.key;
+    const match = lastChanged.match(/^(.+)(\d+)/);
+    const page = Number(match[2]);
+    if (!isNaN(page)) {
+      if (key === "ArrowRight") {
+        setView(`${match[1]}${page + 1}`, state);
+      } else if (key === "ArrowLeft") {
+        setView(`${match[1]}${page - 1}`, state);
+      }
+    }
+    if (key === "v") {
+      setView("views");
+    } else if (key === "s") {
+      setView("steps");
+    }
+  });
+
   const currentPage = window.location.hash.slice(2);
   if (currentPage) {
     setView(currentPage, state);

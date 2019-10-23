@@ -5,7 +5,7 @@ const template = `
 <li>Demo: a music generator from scratch</li>
 <li>Tour: different music generators</li>
 <li>Challenges: what is easy and what is not</li>
-<li>Future: What's next?</li>
+<li>Future: what's next?</li>
 </ul>
 `;
 

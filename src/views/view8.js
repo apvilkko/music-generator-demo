@@ -6,8 +6,7 @@ const template = `
 <li>Certain instruments, e.g. distorted guitar</li>
 <li>Massive arrangements with lots of channels</li>
 <li>Natural variation/song structure</li>
-<li>Chord/melody based music</li>
-<li>Generating melodies that are simple but engaging</li>
+<li>Chord/melody based music, engaging melodies</li>
 </ul>
 
 Genres: classical (tonal/traditional), rock

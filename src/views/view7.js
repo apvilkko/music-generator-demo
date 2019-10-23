@@ -3,10 +3,8 @@ const template = `
 <p>What is easy?</p>
 <ul>
 <li>Synthetic sounds (vs. organic)</li>
-<li>Low number of individual sounds</li>
-<li>Low polyphony</li>
-<li>Minimal variation</li>
-<li>Simple arrangement</li>
+<li>Low number of individual sounds and polyphony</li>
+<li>Minimal variation and arrangement</li>
 <li>No strict chord-based structure</li>
 <li>No clear melodies</li>
 </ul>
