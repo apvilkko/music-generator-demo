@@ -89,8 +89,9 @@ const setupUi = state => {
 
   document.addEventListener("keydown", evt => {
     const key = evt.key;
-    const match = lastChanged.match(/^(.+)(\d+)/);
+    const match = lastChanged.match(/^([^\d]+)(\d+)/);
     const page = Number(match[2]);
+    console.log(match, page);
     if (!isNaN(page)) {
       if (key === "ArrowRight") {
         setView(`${match[1]}${page + 1}`, state);
